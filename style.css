@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Inicio Header */
+.nav{
+    background-color: #121212;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 38px;
+}
+
+.nav-list a{
+    color: #fff;
+    padding: 28px;
+    text-decoration: none;
+}
+
+.nav-list a:hover{
+    color: #8b8888;
+}
+/* Fim Header */
+
+/* Inicio Main */
+.main{
+    background-color: #000;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url("images/programador.png");
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.main h1{
+    color: #fff;
+    font-size: 54px;
+}
+
+.main p{
+    color: #1E96fc;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-style: italic;
+}
+
+.call-to-action{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 14px;
+    border: 0;
+    border-radius: 4px;
+    transition: 0.9s;
+}
+
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+
+.main a{
+    text-decoration: none;
+    color: #181818;
+}
+/* Fim Main */
+
+/* Inicio About */
+.about{
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about div h2{
+    font-size: 32px;
+    padding-bottom: 14px;
+}
+
+.about img{
+    max-width: 450px;
+    border-radius: 8px;
+}
+/* Fim About */
+
+/*Inicio Project*/
+.project{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.project h2{
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.project p{
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.project-list{
+    width: 100%;
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.project img{
+    width: 22%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 0.9s;
+    border-radius: 9px;
+}
+
+.project img:hover{
+    opacity: 1;
+}
+
+.action{
+    background-color: #181818;
+    padding: 12px 28px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+/*Fim Project*/
+
+/*Inicio Rodapé*/
+footer{
+    width: 100%;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p{
+    margin-left: 12px;
+}
+/*Inicio Rodapé*/
+
+/*Responsavidade*/
+@media (max-width: 1050px){
+    /*Inicio Main*/
+   .main h1{
+    font-size: 45px;
+   }
+
+   .main p{
+    font-size: 18px;
+   }
+
+   .main{
+    background-size: cover;
+   }
+   /*Fim Main*/
+
+   /*Inicio Sobre*/
+   .about{
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+   }
+
+   .about div{
+    max-width: 80%;
+   }
+
+   .about div h2{
+    font-size: 45px;
+   }
+
+   .about img{
+    width: 80%;
+    margin-top: 30px;
+
+   }
+   /*Fim Sobre*/
+
+   /*Inicio Projetos*/
+   .project img{
+    width: 27.5%;
+   }
+   /*Fim Projetos*/
+
+   /*Inicio Rodapé*/
+   footer{
+    flex-direction: column;
+   }
+
+   footer h3{
+    font-size: 24px;
+    margin-bottom: 8px;
+   }
+
+   footer p{
+    margin: 0;
+   }
+   /*Fim Rodapé*/
+}
